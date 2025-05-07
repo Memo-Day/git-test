@@ -13,3 +13,6 @@ I'm software Tester with 5 years of experience, specializing in:
 ✔️ Coordination between internal and external teams to ensure flawless delivery 
 ✔️ Testing across various environments: Windows, Linux (Arch, Debian), mobile, production 
 ✔️ Fluent with Front end notions (Visual Studio Codes, JavaScript, HTML, CSS, GitHub)
+
+#My Gists
+https://gist.github.com/Memo-Day
