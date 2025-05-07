@@ -1,23 +1,168 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestGit</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>Welcome to TestGit everyone</h1>
-    </header>
-    <main>
-        <section id="content">
-            <p>This is a simple HTML page to test Git.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Coding by Mélanie</p>
-    </footer>
-    </body>
-    </html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Mél</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(20, 30, 48) 11.2%,
+          rgb(36, 59, 85) 91.1%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #ff5733;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #ff6f3c;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+        font-weight: 400;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #ff6f3c;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        color: #ff6f3c;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #ff6f3c;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        margin-top: 30px;
+      }
+      .footer a:hover {
+        display: inline-block;
+        color: white;
+        text-decoration: underline;
+      }
+      .footer-name {
+        color: #ff6f3c;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mélanie Parmentier</h1>
+      <h2><strong>Software Tester</strong></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/391/original/testingii.png?1745932297"
+        alt="It Digital Fox"
+      />
+      <p>
+        <span style="color: whitesmoke">Mélanie.</span>
+        <em
+          ><strong
+            >Software Tester specializing in web quality assurance. I validate
+            high-performance applications that solve real-world problems and
+            deliver an outstanding user experience. Currently working with
+            Python and JavaScript to ensure reliable and high-performing
+            software solutions.</strong
+          ></em
+        >
+        <br />
+      </p>
+      <hr style="border: none; height: 2px; background-color: #ff5733" />
+      <a
+        href="https://gist.github.com/Memo-Day"
+        target="_blank"
+        class="learn-more"
+      >
+        Visit my Github here 👈
+      </a>
+      <button class="buy-button">👉 Contactez Moi</button>
+      <hr style="border: none; height: 2px; background-color: #ff5733" />
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://se.linkedin.com/in/m%C3%A9lanie-parmentier111?original_referer=https%3A%2F%2Fwww.google.com%2F"
+          target="_blank"
+          class="footer-name"
+        >
+          Mélanie Parmentier 🐞
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        const name = prompt("What is your name?");
+        const email = prompt("What is your email address?");
+        const availability = prompt(
+          "Are you available in the morning or afternoon?"
+        ).toLowerCase();
+
+        if (!name || !email || !availability) {
+          alert("Please provide all information.");
+          return;
+        }
+
+        let message = `Thank you ${name}! We will be in touch by email.`;
+
+        if (availability.includes("morning")) {
+          message += " Meanwhile, see you in the morning! 🐞";
+        } else if (availability.includes("afternoon")) {
+          message += " Meanwhile, see you in the afternoon! 🐞";
+        } else {
+          message += " We'll confirm the time soon! 🐞";
+        }
+
+        alert(message);
+      }
+
+      const buyButton = document.querySelector(".buy-button");
+      if (buyButton) {
+        buyButton.addEventListener("click", buy);
+      }
+    </script>
+  </body>
+</html>
