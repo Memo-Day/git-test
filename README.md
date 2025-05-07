@@ -7,6 +7,7 @@ Discover my HTML project, styling with CSS, creating interaction with JavaScript
 
 ## 🚀 About Me
 I'm software Tester with 5 years of experience, specializing in: 
+<br/>
 ✔️ Functional, BDD, exploratory, and automated tests (Selenium, Postman, SoapUI) 
 ✔️ API testing, integration, and BDD validation 
 ✔️ Bug detection, analysis, and tracking (Jira, Azure DevOps, Xray) 
